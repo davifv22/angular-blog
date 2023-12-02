@@ -1,0 +1,9 @@
+<hr>
+<div class="title">
+    <h2><u>TODOS OS YORDLES</u></h2>
+    <br>
+    <a [routerLink]="['']" routerLinkActive="active" ariaCurrentWhenActive="page">VOLTAR</a>
+</div>
+<div class="container__content">
+    <app-card *ngFor="let dado of dados" id="{{ dado.id }}" pictureCover="{{dado.pictureCover}}" cardTitle="{{dado.title.split(':')[0]}}"></app-card>
+</div>

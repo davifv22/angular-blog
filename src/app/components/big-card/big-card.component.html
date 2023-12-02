@@ -1,14 +1,15 @@
 <div class="container__big-card">
     <div class="big-card__picture">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="">
+        <img src="{{ pictureCover }}" alt="">
     </div>
     <div class="big-card__title">
-        <h1><a href="">Novo Angular - Web Components atingem a maturidade</a></h1>
+        <h1><a [routerLink]="['content', id]">{{ cardTitle }}</a></h1>
     </div>
     <div class="big-card__description">
         <p>
-            Por anos os web components tem sido um padrão quase pronto. Com o recente lançamento do web client da Apple Music, a Apple entregou mais de 45 web components para melhorar a experiência do Apple Music. Outros, incluindo a Amazon, Porsche, arm, Panera,
-            e Microsoft, estão aproveitando o Stencil para criar sistemas de design e web componentes cross-framework.
+            <a [routerLink]="['content', id]">
+            {{ cardDescription }}
+        </a>
         </p>
     </div>
 </div>

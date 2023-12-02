@@ -1,5 +1,6 @@
 .container__menu-title {
     color: white;
+    text-transform: uppercase;
 }
 
 .container__menu-title>h1 {
@@ -9,6 +10,12 @@
     font-weight: bold;
     font-family: sans-serif;
     text-align: center;
+}
+
+.container__menu-title>p {
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
 }
 
 .container__menu-title>hr {

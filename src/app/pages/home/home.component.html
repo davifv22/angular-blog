@@ -1,14 +1,12 @@
-<header>
-    <app-menu-bar></app-menu-bar>
-</header>
 <app-menu-title></app-menu-title>
 <div class="container__articles">
     <div class="articles__main">
-        <app-big-card></app-big-card>
+        <h2>YORDLE DESTAQUE</h2>
+        <app-big-card id="{{ id }}" pictureCover="{{ picture }}" cardTitle="{{ title }}" cardDescription="{{ description }}"></app-big-card>
     </div>
     <div class="articles__others">
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
+        <div class="others__title">
+            <h2>DESTAQUES ANTERIORES</h2><a [routerLink]="['content']">Ver todos...</a></div>
+        <app-small-card *ngFor="let dado of dados.slice(1, 5)" id="{{ dado.id }}" pictureCover="{{dado.pictureCover}}" cardTitle="{{dado.title}}"></app-small-card>
     </div>
 </div>

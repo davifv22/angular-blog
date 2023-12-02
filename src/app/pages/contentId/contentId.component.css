@@ -1,0 +1,29 @@
+.container__contentId {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__contentId>a {
+    margin: .5rem 0;
+    padding: 0.25rem;
+    color: tomato;
+}
+
+.contentId__cover>img {
+    width: 50rem;
+    min-width: 50rem;
+    border-radius: 0.3rem;
+    border: 1px solid gray;
+}
+
+.contentId__title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contentId__description>p {
+    color: rgb(170, 170, 170);
+    margin: 0 1rem;
+}

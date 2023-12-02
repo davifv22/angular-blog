@@ -1,5 +1,6 @@
 .container_small-card {
     width: 25rem;
+    text-transform: uppercase;
 }
 
 .container_small-card-content {
@@ -11,6 +12,7 @@
     width: 10rem;
     min-width: 10rem;
     margin-right: 1rem;
+    border-radius: 0.5rem;
 }
 
 .small-card__title {
